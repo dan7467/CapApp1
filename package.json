@@ -11,14 +11,12 @@
   },
   "devDependencies": {
     "@sap/ux-specification": "^1.102.6",
-    "sqlite3": "^5.0.4"
+    "sqlite3": "^5.0.2"
   },
   "scripts": {
     "start": "cds run",
-    "watch-risks": "cds watch --open risks/webapp/index.html?sap-ui-xx-viewCache=false"
-  },
-  "engines": {
-    "node": "^16.15"
+    "watch-risks": "cds watch --open risks/webapp/index.html#fe-lrop-v4",
+    "watch-mitigations": "cds watch --open mitigations/webapp/index.html?sap-ui-xx-viewCache=false"
   },
   "eslintConfig": {
     "extends": "eslint:recommended",
@@ -46,6 +44,7 @@
     }
   },
   "sapux": [
-    "app/risks"
+    "app/risks",
+    "app/mitigations"
   ]
 }
